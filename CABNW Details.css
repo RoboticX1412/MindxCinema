@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #050609;
+}
+
+.movie-detail {
+  position: relative;
+  background: url(Banner-Captain-America-Brave-New-World.png) center/cover no-repeat;
+  color: #fff;
+  padding: 60px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 20vh;
+}
+.movie::after {
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+.movie-poster {
+  position: relative;
+}
+.movie-poster img {
+  width: 230px;
+  border-radius: 8px;
+}
+.watch-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.watch-btn:hover {
+  background: #e50914;
+  color: white;
+}
+
+/* Info */
+.movie-info h1 {
+  margin: 0;
+}
+.movie-info p {
+  line-height: 1.6;
+}
+.release {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+.tags span {
+  display: inline-block;
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+/* Casts */
+.casts {
+  padding: 30px 40px;
+}
+.casts h2 {
+  margin-bottom: 20px;
+}
+.cast-list {
+  display: flex;
+  gap: 20px;
+}
+.cast img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.cast p {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+}
