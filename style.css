@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.hero {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1600") center/cover no-repeat;
+  color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero::after {
+  content:"";
+  position:absolute; inset:0;
+  background: rgba(0,0,0,0.6); /* lớp tối phủ */
+}
+.hero-content {
+  position: relative;
+  max-width: 600px;
+}
+.hero h1 {
+  margin:0 0 15px; font-size: 32px;
+}
+.hero p {
+  line-height:1.6; margin:0 0 20px;
+}
+.buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.watch {
+  background:red; color:#fff;
+}
+.info {
+  background:#444; color:#fff;
+}
+.poster {
+  position: relative;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+@media(max-width:768px){
+  .hero { flex-direction: column; text-align: center; }
+  .poster { margin-top:20px; }
+}
+.content {
+  padding:40px;
+}
